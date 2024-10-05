@@ -74,6 +74,7 @@ def apply_watermark(input_folder, output_folder, text, position, transparency, s
 
             # テキストの対象を計算
             bbox = draw.textbbox((0, 0), text, font=font)
+            
             text_width, text_height = bbox[2] - bbox[0], bbox[3] - bbox[1]
 
             # 位置の計算
